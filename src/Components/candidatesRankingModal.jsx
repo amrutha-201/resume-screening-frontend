@@ -1,4 +1,4 @@
-import react,{useState} from 'react';
+import React from 'react';
 import '../styles/rankingModal.css';
 function RankingModal(props){
     return(
