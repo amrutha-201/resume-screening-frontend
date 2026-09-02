@@ -1,17 +1,12 @@
 import React,{useState} from 'react';
 import axios from 'axios';
 import '../styles/loadingModal.css';
-import RankingModal from '../Components/candidatesRankingModal';
 function UploadResumes(props){
-    const [upload,setUpload]=useState(false);
     const [files,setFiles]=useState([]);
     const [domain,setDomain]=useState('');
     const[jobDescription,setJobDescription]=useState('');
     const[loading,setLoading]=useState(false);
     const token=localStorage.getItem('token');
-    function handleOpenRanking(){
-        props.setShowRanking(true);
-    }
     function handleFileChange(event){
         setFiles(Array.from(event.target.files))
     }
