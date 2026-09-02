@@ -19,6 +19,7 @@ function LoginModal(props){
             password
         }
         try{
+            console.log('login button clicked')
             const response=await axios.post('https://resume-screening-backend-wi7w.onrender.com/login',userData);
             console.log(response.data);
             alert(response.data.message);
