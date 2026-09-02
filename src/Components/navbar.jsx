@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import '../styles/navbar.css';
 function Navbar(props){
     return(
@@ -13,7 +12,7 @@ function Navbar(props){
                 <button className='nav-link-btn' onClick={props.openRegisterModal}>Register</button>
                 <button className='nav-link-btn profile-icon' onClick={
                 ()=>{
-                    if(props.isProfileOpen==true){
+                    if(props.isProfileOpen===true){
                         props.closeProfileModal()
                     }
                     else{
