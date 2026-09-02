@@ -23,7 +23,7 @@ function UploadResumes(props){
         }
         try{
             setLoading(true);
-            const response=await axios.post('http://localhost:5000/upload-resumes',formData,{headers:{Authorization:token}});
+            const response=await axios.post('https://resume-screening-backend-wi7w.onrender.com/upload-resumes',formData,{headers:{Authorization:token}});
             alert(response.data.message);
             props.setRanking(response.data.results);
             setLoading(false);
