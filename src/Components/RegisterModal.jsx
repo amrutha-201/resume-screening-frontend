@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import '../styles/registermodal.css';
-import CandidateDashboard from '../pages/candidateDashboard';
 function Form(props){
     const[fullName,setFullName]=useState('');
     const[email,setEmail]=useState('');
@@ -27,7 +26,7 @@ function Form(props){
     }
     async function handleSubmit(event){
         event.preventDefault();
-        if(password!=confirmpassword){
+        if(password!==confirmpassword){
             alert("passwords dont match");
             return;
         }
