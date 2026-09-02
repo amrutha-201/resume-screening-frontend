@@ -35,7 +35,7 @@ function CandidateDashboard(){
     }
     async function getHistory(){
         try{
-            const response=await axios.get('http://localhost:5000/candidate-history',{headers:{Authorization:token}});
+            const response=await axios.get('https://resume-screening-backend-wi7w.onrender.com/candidate-history',{headers:{Authorization:token}});
             setHistory(response.data.history);
             setShowHistory(true);
         }
