@@ -1,0 +1,55 @@
+#hero {
+  text-align: center;
+  padding: 100px 40px;
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-buttons button {
+  padding: 14px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #0F172A;
+  color: white;
+}
+#about-screening {
+  padding: 60px;
+  margin: 0 30px;
+  background-color: #FFFFFF;
+}
+
+#about-screening h2 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #0F172A;
+}
+
+#about-screening p {
+  text-align: justify;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #334155;
+} 

@@ -1,0 +1,117 @@
+/* Overlay */
+.history-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal */
+.history-modal {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-header h2 {
+    margin: 0;
+    color: #0F172A;
+}
+
+/* Close Button */
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Table */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th {
+    background-color: #0F172A;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.history-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.history-table tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Score */
+.score {
+    font-weight: bold;
+    color: #16a34a;
+}
+
+/* View Button */
+.view-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .history-modal {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .history-table th,
+    .history-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .view-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
