@@ -38,7 +38,7 @@ function Form(props){
         }
         try
         {
-            const response=await axios.post('http://localhost:5000/register',userData);
+            const response=await axios.post('https://resume-screening-backend-wi7w.onrender.com/register',userData);
             console.log(response.data);
             localStorage.setItem('fullName',response.data.fullName);
             localStorage.setItem('email',response.data.email);
