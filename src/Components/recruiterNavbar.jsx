@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link,useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 function RecruiterNavbar(props){
-    const navigate=useNavigate();
     return(
         <div>
             <nav className='navbar'>
@@ -13,7 +12,7 @@ function RecruiterNavbar(props){
                     <button className='nav-link-btn' onClick={props.openShowHistory}>History</button>
                     <button className='nav-link-btn profile-icon' onClick={
                     ()=>{
-                    if(props.isProfileOpen==true){
+                    if(props.isProfileOpen===true){
                         props.closeProfileModal()
                     }
                     else{
