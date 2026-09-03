@@ -91,3 +91,80 @@
     margin-left: 5px;
     font-weight: 600;
 }
+/* Tablet */
+@media (max-width: 992px){
+
+    .modal{
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .modal{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal h1{
+        font-size: 24px;
+    }
+
+    .modal input[type="text"],
+    .modal input[type="email"],
+    .modal input[type="password"]{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .register-btn{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .RoleGroup{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalHeader{
+        gap: 10px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .modal{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .modal h1{
+        font-size: 20px;
+    }
+
+    .modal label{
+        font-size: 14px;
+    }
+
+    .modal input[type="text"],
+    .modal input[type="email"],
+    .modal input[type="password"]{
+        font-size: 13px;
+    }
+
+    .register-btn{
+        font-size: 14px;
+    }
+
+    .close-btn{
+        font-size: 20px;
+    }
+
+    .login-link{
+        font-size: 13px;
+    }
+}
