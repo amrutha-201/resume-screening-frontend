@@ -10,14 +10,15 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 15px;
 }
 
 /* Modal */
 .description-modal{
     background: white;
-    width: 70%;
+    width: 80%;
     max-width: 800px;
-    max-height: 80vh;
+    max-height: 85vh;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -35,6 +36,7 @@
 .description-header h2{
     margin: 0;
     color: #0F172A;
+    font-size: 24px;
 }
 
 /* Close Button */
@@ -54,6 +56,7 @@
 .description-modal pre{
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-wrap: break-word;
     font-family: Arial, sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -64,14 +67,65 @@
     border: 1px solid #e2e8f0;
 }
 
-/* Responsive */
-@media(max-width:768px){
+/* Tablet */
+@media(max-width:992px){
+
     .description-modal{
-        width: 95%;
-        padding: 15px;
+        width: 90%;
+        padding: 18px;
+    }
+
+    .description-header h2{
+        font-size: 22px;
     }
 
     .description-modal pre{
         font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .description-modal{
+        width: 95%;
+        padding: 15px;
+        max-height: 90vh;
+    }
+
+    .description-header h2{
+        font-size: 20px;
+    }
+
+    .description-modal pre{
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 12px;
+    }
+
+    .close-btn{
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile */
+@media(max-width:480px){
+
+    .description-modal{
+        width: 98%;
+        padding: 12px;
+    }
+
+    .description-header h2{
+        font-size: 18px;
+    }
+
+    .description-modal pre{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .close-btn{
+        font-size: 18px;
     }
 }
