@@ -73,6 +73,68 @@
 
     transition:0.3s;
 }
+/* Tablet */
+@media (max-width: 992px) {
+    .analysis-modal{
+        width:90%;
+        padding:20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .analysis-modal{
+        width:95%;
+        max-height:90vh;
+        padding:15px;
+    }
+
+    .analysis-header h2{
+        font-size:20px;
+    }
+
+    .analysis-modal pre{
+        font-size:14px;
+        padding:15px;
+        line-height:1.6;
+    }
+
+    .close-btn{
+        width:32px;
+        height:32px;
+        font-size:16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .analysis-modal{
+        width:98%;
+        padding:12px;
+    }
+
+    .analysis-header{
+        margin-bottom:15px;
+        padding-bottom:10px;
+    }
+
+    .analysis-header h2{
+        font-size:18px;
+    }
+
+    .analysis-modal pre{
+        font-size:13px;
+        padding:12px;
+    }
+
+    .close-btn{
+        width:28px;
+        height:28px;
+        font-size:14px;
+    }
+}
 
 .close-btn:hover{
     background:#e2e8f0;
