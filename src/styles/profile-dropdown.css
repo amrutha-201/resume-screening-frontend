@@ -39,3 +39,55 @@
 .profile-dropdown button:hover{
     background-color: #DC2626;
 }
+
+/* Tablet */
+@media (max-width: 992px){
+
+    .profile-dropdown{
+        width: 220px;
+        right: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .profile-dropdown{
+        width: 90%;
+        max-width: 300px;
+        right: 50%;
+        transform: translateX(50%);
+        top: 140px;
+    }
+
+    .profile-dropdown p{
+        font-size: 14px;
+    }
+
+    .profile-dropdown p:first-child{
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .profile-dropdown{
+        width: 95%;
+        top: 150px;
+        padding: 12px;
+    }
+
+    .profile-dropdown p{
+        font-size: 13px;
+    }
+
+    .profile-dropdown p:first-child{
+        font-size: 15px;
+    }
+
+    .profile-dropdown button{
+        font-size: 14px;
+        padding: 8px;
+    }
+}
