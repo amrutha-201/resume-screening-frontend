@@ -53,3 +53,106 @@
   font-size: 20px;
   color: #334155;
 } 
+/* Tablet */
+@media (max-width: 992px) {
+
+  #hero {
+    padding: 80px 30px;
+  }
+
+  #hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    max-width: 700px;
+  }
+
+  #about-screening {
+    padding: 40px;
+    margin: 0 20px;
+  }
+
+  #about-screening p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  #hero {
+    padding: 60px 20px;
+  }
+
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  #about-screening {
+    padding: 25px;
+    margin: 0 10px;
+  }
+
+  #about-screening h2 {
+    font-size: 1.8rem;
+  }
+
+  #about-screening p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  #hero {
+    padding: 50px 15px;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about-screening {
+    padding: 20px;
+    margin: 0 5px;
+  }
+
+  #about-screening h2 {
+    font-size: 1.5rem;
+  }
+
+  #about-screening p {
+    font-size: 15px;
+  }
+}
