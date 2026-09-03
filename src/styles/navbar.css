@@ -26,8 +26,6 @@
 
 .right a{
     color:white;
-    font-size:25px;
-    font-weight:bold;
 }
 
 .nav-link-btn{
@@ -127,6 +125,9 @@
     .profile-icon{
         width:32px;
         height:32px;
+        font-size:14px;
+    }
+    .right a{
         font-size:14px;
     }
 }
